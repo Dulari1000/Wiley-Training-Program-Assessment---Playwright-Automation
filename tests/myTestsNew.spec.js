@@ -63,6 +63,7 @@ test('Check Browse All Titles button', async ({ page }) => {
     await page.goto('https://onlinelibrary.wiley.com/');
     await page.waitForLoadState('domcontentloaded');
 
+    
     console.log('Scrolling near the footer...');
     await page.evaluate(() => {
       const footer = document.querySelector('footer');
